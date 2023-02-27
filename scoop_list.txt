@@ -1,0 +1,12 @@
+Installed apps:
+
+[32;1mName     Version Source Updated             Info[0m
+[32;1m----     ------- ------ -------             ----[0m
+bat      0.22.1  main   2023-02-14 20:48:48 
+broot    1.20.1  main   2023-02-14 16:21:38 
+fd       8.6.0   main   2023-02-14 21:04:59 
+fzf      0.37.0  main   2023-02-14 14:07:52 
+gsudo    2.0.4   main   2023-02-14 23:06:16 
+ripgrep  13.0.0  main   2023-02-14 13:05:09 
+starship 1.12.0  main   2023-01-14 11:15:52 
+
