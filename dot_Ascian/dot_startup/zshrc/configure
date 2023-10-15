@@ -1,0 +1,16 @@
+# configure
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+
+# set character set
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# plugins
+plugins=(
+    docker
+    git
+    extract
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
