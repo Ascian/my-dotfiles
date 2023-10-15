@@ -7,7 +7,7 @@ format = """[](fg:#873232)\
         $time[](bg:#5e3287 fg:#873274)\
         $memory_usage[](bg:#363287 fg:#5e3287)\
         $directory[](bg:#326687 fg:#363287)\
-        $kubernetes[](bg:#328784 fg:#326687)\
+        $conda[](bg:#328784 fg:#326687)\
         $docker_context[](bg:#328756 fg:#328784)\
 
         (Source control - for right side)\
@@ -34,7 +34,7 @@ style_user = "bg:#873232 fg:15"
 format = "[$user ]($style)"
 
 [time]
-disabled = false
+disabled = true
 ### color is set to orange, because of the configured time_range--to get your attention for e. g. R&R time ;)
 style = "bg:#873274 fg:15"
 use_12hr = false
@@ -43,7 +43,7 @@ utc_time_offset = "local"
 format = "[ $time ]($style)"
 
 [memory_usage]
-disabled = false
+disabled = true
 symbol = " "
 style = "bg:#5e3287 fg:15"
 threshold = -1
@@ -60,11 +60,12 @@ truncate_to_repo = true
 # fish_style_pwd_dir_length = 3
 format = "([$read_only ]($read_only_style ))[$path ]($style)"
 
-[kubernetes]
+[conda]
 disabled = false
-symbol = "☸︎"
 style = "bg:#326687 fg:15"
-format = '[$symbol$context(\($namespace\)) ]($style)'
+symbol = " "
+ignore_base = false
+format = '[$symbol$environment ]($style)'
 
 [docker_context]
 disabled = false
@@ -126,7 +127,7 @@ format = "[$symbol$version ]($style)"
 disabled = false
 symbol = "  "
 style = "bold bg:#7e8732 fg:15"
-# threshold = 1
+number_threshold = 1
 format = "[$symbol$number ]($style)"
 
 [cmd_duration]
